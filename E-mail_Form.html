@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Front-end foundations: HTML forms</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -13,62 +13,36 @@
   </head>
 
   <body>
-
-<form>
-  <form action="https://sk3pt05apien.github.io/HTML-Forms_E-mail-Z.R.-Thinkful/" method="POST">
-    <div>
-    <label for="name">Name:</label>
-    <input id="name" type="text" name="name" />
-  </div>
-
-  <div>
-    <label for="E-mail">E-mail:</label>
-    <input
-      id="E-mail"
-      type="text"
-      name="E-mail"
-      autofocus="on"
-      required
-    />
-    </div>
-
-    <div>
-      <div>
-        <label for="form-message">Your message:</label>
-        <textarea
-          id="form-message"
-          name="message"
-          autofocus="on"
-          placeholder="Create a message here"
-        ></textarea>
-      </div>
-    </div>
-    <div>
-        <fieldset>
-          <legend>Name</legend>
-          <div>
-            <label for="name">Name:</label>
-            <input
-              id="name"
-              type="text"
-              name="name"
-              placeholder="Enter your name here"
-            />
-          </div>
-          <div>
-            <label for="form-message">Your message:</label>
-            <textarea
-              id="form-message"
-              name="message"
-              autofocus="on"
-              placeholder="Create a message here"
-            ></textarea>
-          </div>
-        </fieldset>
+    <main>
+      <form action="https://sk3pt05apien.github.io/HTML-Forms_E-mail-Z.R.-Thinkful/" method="POST">
         <div>
-        <button type="submit">Submit</button>
+          <label for="name">Name:</label>
+          <input id="name" type="text" name="name" placeholder="Enter your name here" />
         </div>
-        
+
+        <div>
+          <label for="email">E-mail:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="form-message">Your message:</label>
+          <textarea
+            id="form-message"
+            name="message"
+            placeholder="Create a message here"
+          ></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
       </form>
-    </body>
-    </html>
+    </main>
+  </body>
+</html>
